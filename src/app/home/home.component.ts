@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
 public name='Đỗ Hồng Thái';
 public age =25;
  public address ='Biên Hòa Đồng Nai';
+
+ public listNyc =['DQ','HN','HĐ','TM','TT'];
   constructor() { }
 
   ngOnInit(): void {

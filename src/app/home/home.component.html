@@ -1,19 +1,4 @@
-<h3>Databinding-EventsBinding</h3>
-<br/>
-<input type="text" [(ngModel)]="name"> <!--những thứ bên ngoài truyền vào bên trong dùng ngModel-->
-<h2>Chào bạn {{name}}</h2>
-<h2>Mời nhập số tuổi</h2>
-<input type="text" [(ngModel)]= "age">
-<h1>Số tuổi của bạn là {{age}}</h1>
-<div *ngIf="age <=18;then tre; else gia"></div>
-<ng-template #tre><h2>Bạn trẻ quá</h2></ng-template>
-<ng-template #gia><h2>Bạn già qá quá</h2></ng-template>
-
-
-<button (click)="resetAge()">reset Age</button>
-<button (click)="resetName()">Reset tên</button>
-<br/>
-<br>
-<input type="text" [(ngModel)]="address">
-<h2> Địa chỉ nhà là {{address}}</h2>
-<button (click)="resetAddress()"> Reset</button>
+<h2>Danh sách người yêu cũ</h2>
+<div *ngFor="let nyc of listNyc">
+    <li>{{nyc}}</li>
+</div>
