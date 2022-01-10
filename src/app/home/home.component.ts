@@ -24,5 +24,9 @@ public age =25;
   {
     this.address='';
   }
+  public resetAge():void 
+  {
+    this.age=0;
+  }
 
 }
