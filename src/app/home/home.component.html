@@ -1,3 +1,6 @@
 <p>Hello {{name}}!</p>
 <input value="{{name}}" /> <br/>
 <input [value]="name" title="Đây là tên ">
+
+<h2 *ngIf="age > 18">Bạn quá già rồi</h2>
+<h2 *ngIf="age <= 18">Bạn còn trẻ lắm</h2>
