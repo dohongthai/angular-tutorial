@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 public name='Đỗ Hồng Thái';
 public age =25;
+ public address ='Biên Hòa Đồng Nai';
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public resetName():void 
+  {
+    
+    this.name = '';
+  }
+  public resetAddress():void 
+  {
+    this.address='';
   }
 
 }
