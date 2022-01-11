@@ -19,6 +19,7 @@ public age =25;
   {ten:'Táo', gia:-3,sell: false},
   {ten:'Dứa', gia:3,sell: true},
 ];
+
   constructor() { }
 
   ngOnInit(): void {
