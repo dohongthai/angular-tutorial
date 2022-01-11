@@ -1,4 +1,4 @@
-<table class="tabel">
+<!-- <table class="tabel">
     <tr>
         <th>STT</th>
         <th>Tên</th>
@@ -15,5 +15,19 @@
             <span>{{trai.sell | onSale}}</span>
         </td>
     </tr>
-</table>
+</table> -->
+
+Tỉnh / Thành phố:
+<select name="" id="city" (change)="changeCity($event)">
+    <option value="{{data.city}}" *ngFor="let data of dataVietnam">{{data.city}}</option>
+</select>
+<br/>
+Quận / Huyện:
+<select name="" id="district" >
+    <option value="{{district}}" *ngFor="let district of districts">{{district}}</option>
+</select>
+Thị / Xã / Phường :
+<select name="" id="street" >
+    <option value="{{district}}" *ngFor="let district of districts">{{district}}</option>
+</select>
 
