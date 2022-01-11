@@ -1,4 +1,18 @@
-<h2>Danh sách người yêu cũ</h2>
-<div *ngFor="let nyc of listNyc">
-    <li>{{nyc}}</li>
-</div>
+<table class="tabel">
+    <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Giá</th>
+        <th>Sale</th>
+    </tr>
+    <tr *ngFor="let trai of traiCay ;let i =index">
+        <td>{{i+1}}</td>
+        <td>{{trai.ten}}</td>
+        <td class="right">
+            <span [ngClass]="{'so-am':trai.gia<0}">{{trai.gia}}</span>
+        </td>
+        <td>
+            <span *ngIf="trai.sell" >Dang sale</span>
+        </td>
+    </tr>
+</table>

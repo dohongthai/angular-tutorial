@@ -12,6 +12,13 @@ public age =25;
  public address ='Biên Hòa Đồng Nai';
 
  public listNyc =['DQ','HN','HĐ','TM','TT'];
+ 
+ public traiCay =[
+   {ten:'Nhãn' ,gia:12, sell: true},
+  {ten:'nho', gia:14,sell: false},
+  {ten:'Táo', gia:-3,sell: false},
+  {ten:'Dứa', gia:3,sell: true},
+];
   constructor() { }
 
   ngOnInit(): void {
