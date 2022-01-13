@@ -1,5 +1,5 @@
-<p>about works!</p>
-
+<p appHightlight>about works!</p>
+<p [appHightLight]="myColor">about works!</p>
 <ul [ngSwitch]="loginName">
     <li *ngSwitchCase="'user'">
         <p>User is logged in ....</p>
@@ -9,5 +9,6 @@
     </li>
     <li *ngSwitchDefault>
         <p>Please choose login nam</p>
+
     </li>
 </ul>
